@@ -1,0 +1,20 @@
+:root {
+    --darkColor: #04001e;
+    --lightColor: #DFFBFF;
+    --primaryColor: #DB086F;
+}
+
+body{
+    background: var(--darkColor);
+    color: var(--lightColor);
+    font-family: system-ui;
+}
+
+a{
+    color: var(--lightColor);     
+}
+
+.wrapper{
+    max-inline-size: 64rem;
+    border: 1px solid red;
+}
