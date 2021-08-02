@@ -1,3 +1,5 @@
+@import './display-flex.css';
+
 :root {
     --darkColor: #04001e;
     --lightColor: #DFFBFF;
@@ -15,6 +17,17 @@ a{
 }
 
 .wrapper{
-    max-inline-size: 64rem;
-    border: 1px solid red;
+    max-inline-size: 64rem; /*Equivale a width, 1rem=16px */
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.box{
+    border: 5px dashed var(--primaryColor);
+    padding: 1rem;
+    counter-increment: item-flex;
+}
+
+.box::after{
+    content: counter(item-flex)
 }
