@@ -1,0 +1,8 @@
+.flexDirecion{
+    display: flex;   
+    /*flex-direction: row-reverse; Por defecto flex-direction es row, con row-reverse se invierte el orden donde emppieza a pintarse los flex-items*/
+    flex-direction: column-reverse; /*flex-direction se puede establecer como columna en lugar de fila como lo hace row, esto se logra con colum, con colum-reverse se invierte el orden donde emppieza a pintarse los flex-items, esto serviría para emular un caso como los mensajes de chat*/
+    max-block-size: 200px; /*Para establecer un alto maximo a flex container*/
+    overflow: auto;
+
+}

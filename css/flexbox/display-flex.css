@@ -1,11 +1,13 @@
 .displayFlex {
     /* border: 1px solid yellow; */
     display: flex; /*con solo poner flex, se ponen valores por defecto como: flex-basis auto, flex-direction row, flex-grow 0, flex-shrink 1, flex-wrap nowrap, -webkit-box-flex 0, -webkit-box-reflect none*/
+    /*esto es para no bacer el espaciado entre los flex items .box ----> .displayFlex .box:not*/
+    /* gap: 1rem;  */
 }
 
-.box {
-    margin-inline-start: 1rem;/*Sería como unn margin left*/
-}
+/* .box {
+    margin-inline-start: 1rem; Sería como unn margin left
+} */
 
 /*si al costado de una caja .box hay otra caja .box añado una el margen, esto es estilo de hermano, estilo adaycente*/
 /*margin-inline-start: 1rem, Sería como unn margin left*/

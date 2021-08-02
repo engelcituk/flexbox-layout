@@ -1,0 +1,24 @@
+.flexOrder {
+    /*al poner flex, los dos hijos del div de la clase flexOrder, la imagen como el texto, pasan a ser flex-items y se pasan a distribuirse como pueden dentro del espacio*/
+    display: flex;
+    gap: 5rem; /*El gap es el espaciado entre flex-items, no sus costados (no es padding ni margin)*/
+}
+
+.flexOrder img {
+    border-radius: 50%;
+}
+
+/*Lo siguiente es para cambiar el orden de los parrafos y img de los elementos pares, para que esto funciones, hay que aplicar la regla tanto para P e IMG*/
+/*un pseudoselector, para tomar a las filas (flexOrder) pares y su elemento parrafo */
+.flexOrder:nth-child(even) p{  /*even-> es para pares, odd->para impares*/
+    order: 1; /*Le cambio su posicion a 1*/  
+}
+/*un pseudoselector, para tomar a las filas (flexOrder) pares y su elemento img */
+.flexOrder:nth-child(even) img{ /*even-> es para pares, odd->para impares*/
+    order: 2; /*Le cambio su posicion a 2*/    
+}
+
+/*La dos reglas anteriores funcionan, pero otra manera de hacerlo es, sí solo hay dos elementos en cada flex-item, bastaría con una sola regla css ya sea para P o img*/
+/*.flexOrder:nth-child(even) p{  even-> es para pares, odd->para impares
+    order: -1; Cambio el orden default de p a uno inverso al estabecerlo en -1
+}*/
