@@ -1,0 +1,19 @@
+/*
+al poner un flex container, al decirle que sea Flex y si este tiene muchos flex items y estos sobrepasan al tamaño del viewport, habría que hacer scroll,
+esto es un problema y para evitarlo se usa flex-wrap: wrap; para hacer que los flex items se coloquen en la siguiente linea. Por defento flex-wrap es no-wrap
+y este afila los elementos de izq a derecha y con flex-wrap: wrap-reverse; podemos inverti este flujo*/
+.flexWrap{
+    display: flex;   
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-flow: row-reverse, wrap-reverse; */
+
+}
+
+/*
+flex-direction + flex-wrap = direction, wrap
+Tanto la dirección como el wrap pueden  mesclar en una sola propiedad llamada flex-flow, donde el primer valor de flex-flow
+va ser la dirección y el segundo valor el wrap
+*/
