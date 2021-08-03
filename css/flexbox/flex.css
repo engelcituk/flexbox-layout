@@ -1,0 +1,33 @@
+.flex{
+    display: flex;
+    background: lightgray;
+}
+
+/*Estilos a los hijos, a los flex items de la clase .flex  Los hijos de .flex son items con la clase box*/
+/* .flex > * { */
+    /* border: 1px solid red!important; */
+    /*flex-grow: 1;Capacidad de cuanto se agranda, donde 0 no se agranda para nada y 1 es agrandarse hasta el 100%*/
+    /*flex-shrink: Capacidad de cuanto se achica*/
+   /* flex-basis: 100px;Es la base flexible, es como el tamaño por defecto de un elemento, este por default es auto, si se pone una medida, con este va empezar a negociar en su flexibilidad, en este caso se refiere al largo o width */
+/* } */
+
+/* .flex > p {
+    border: 1px solid green!important;
+    flex-basis: 50px;
+} */
+
+.flex img{
+    inline-size: 400px;/*el width*/
+    flex-shrink: 0;/*Capacidad de achicamiento, Por defecto está en 1, lo que hace que el elemento se achique en un 100%, al ponerlo en 0 ya puede agarrar los 400px que indica la propiedad inline-size*/
+}
+
+.flex > div {
+    border: 1px solid red; 
+    /*flex-grow: 1; Para que amplie hasta el 100%*/
+    /* flex-basis: 100%; */
+    flex: 1;
+}
+/*
+Tambien se puede aplicar las 3 propiedades flex-grow, flex-shrink, flex-basis en una sola propiedad llamada flex, su equivalente queda así
+flex-grow: 1 + flex-shrink: 1 + flex-basis: 0% = flex: 1;
+*/
