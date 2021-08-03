@@ -1,0 +1,51 @@
+.justifyContent{
+    display: flex;
+   /*justify-content: space-between; con respecto a su flex container, alinea los elementos con un espacio entre ellos ocupando todo el espacio disponible, pero como si mandara los items en los costados*/
+    /*justify-content: space-around; Pone espaciados en ambos costados de cada flex item, estos espacios se suman cuando dos items esta al lado del otro*/
+    justify-content: space-evenly; /*Similar al space-around pero este no suma los espaciados que hay en cada item*/ 
+    /*justify-content: flex-start; Alinea los flex-items al inicio del eje principal*/ 
+     /*justify-content: flex-end; Alinea los flex-items al final del eje principal  */
+    /* flex-direction: column; */
+    /* block-size: 1000px; */
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    gap: 2rem;/* Espaciado entre los elememntos*/
+    /*lalign-items: flex-start; ign-items por defecto es stretch, por lo que estira los items hasta donde indique block-size: 500px, para c */
+}
+
+.spaceBetween {
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between; 
+    padding: 1rem;
+    align-items: center;
+}
+.spaceBetween img {
+    block-size: 100px; /*Es el alto, es como el equivalente a height*/
+    border-radius: 50%;
+    align-items: center;
+}
+
+.spaceBetween ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+/* A cada elemento que está por dentro */
+/* .justifyContent > img {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+} */
+
+/* .justifyContent img:nth-of-type(1){
+    align-self: flex-end;   
+}
+.justifyContent img:nth-of-type(2){
+    align-self: center;   
+} */
+/*
+Cuando estamos en fila justify-content alinea para el eje principal, esto es cuando flex-direction: row
+Cuando estamos en columna align-items alinea para el eje transversal, esto es cuando flex-direction: column
+
+*/
