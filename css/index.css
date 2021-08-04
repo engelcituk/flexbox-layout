@@ -1,4 +1,6 @@
 @import './incons.css';
+@import './fonts.css';
+
 
 :root{
     --primary: #00B050;
@@ -10,8 +12,16 @@
     --gray50:#181818;
     --gray60:#121212;
     --black: #000000;
+    --baseFontFamily: Avenir, Helvetica, sans-serif;
+    --headline1: bold 2rem/normal var(--baseFontFamily);
+    --headline2: bold 1.5rem/1.75rem var(--baseFontFamily);
+    --baseFont: normal .875rem/1.375rem var(--baseFontFamily);
+    --baseFontBold: bold .875rem/1.375rem var(--baseFontFamily);
+    --buttonFont: bold .875rem/1rem var(--baseFontFamily);
+    --smallFont: normal .75em/normal var(--baseFontFamily);
 }
 
 body{
     background: var(--primary);
+    font-family: var(--baseFontFamily);
 }
