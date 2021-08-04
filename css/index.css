@@ -1,6 +1,7 @@
 @import './incons.css';
 @import './fonts.css';
-
+@import './body.css';
+@import './link.css';
 
 :root{
     --primary: #00B050;
@@ -21,7 +22,7 @@
     --smallFont: normal .75em/normal var(--baseFontFamily);
 }
 
-body{
+/* body{
     background: var(--primary);
     font-family: var(--baseFontFamily);
-}
+} */
