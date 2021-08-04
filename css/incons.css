@@ -1,0 +1,15 @@
+
+/* selector de atributo que busca la clase que empieze con icon- o que icon- sea el segundo, tercero o n posicon de clase */
+[class^='icon-'], [class*=' icon-']{
+    inline-size: 50px;
+    block-size: 50px;
+    background-size: cover;
+    display: inline-block;
+}
+.icon-home {
+    background-image: url('../img/icons/home.svg');
+}
+
+.icon-home-active {
+    background-image: url('../img/icons/home-active.svg');
+}

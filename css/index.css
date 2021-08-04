@@ -1,3 +1,5 @@
+@import './incons.css';
+
 :root{
     --primary: #00B050;
     --white: #ffffff;
@@ -8,4 +10,8 @@
     --gray50:#181818;
     --gray60:#121212;
     --black: #000000;
+}
+
+body{
+    background: var(--primary);
 }
