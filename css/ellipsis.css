@@ -1,0 +1,13 @@
+.ellipsis{
+    overflow: hidden;
+}
+
+/*Selector de cualquier hijo directo de la clase ellipsis
+Todos los elementos de ellipsis van a ser bloques por defecto
+*/
+.ellipsis > * {
+    display: block;
+    white-space: nowrap; /*Para que el contenido texto no se brinque a la siguiente linea*/
+    overflow: hidden; /*Ocultar todo lo que se desbordó*/
+    text-overflow: ellipsis; /*Esto funciona siempre y cuando ya haya white-space: nowrap;  y overflow: hidden;*/
+}

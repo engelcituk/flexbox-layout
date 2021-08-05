@@ -4,6 +4,8 @@
 @import './link.css';
 @import './button-icon.css';
 @import './sidebar.css';
+@import './ellipsis.css';
+
 
 :root{
     --primary: #00B050;
