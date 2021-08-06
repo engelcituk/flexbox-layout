@@ -33,7 +33,7 @@
 <body class="body">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex debitis officia illum aspernatur, sapiente molestiae, perspiciatis repellendus quibusdam inventore commodi illo a numquam velit hic voluptatum nulla porro quisquam quidem!</p>
     <div class="playerControls">
-        <div class="playerControls-buttons">
+        <div class="playerControls-buttons" aria-label="Controles de reproducción">
             <!-- aria-label="Reproducir" title="Reproducir" son para accesibilidad, un reader lo lee, aria-hidden="true" indica que un reader lo ignore  -->
             <button class="buttonIcon" aria-label="Previo" title="Previo">
                 <i class="icon-prev" aria-hidden="true"></i>
@@ -45,7 +45,7 @@
                 <i class="icon-next" aria-hidden="true"></i>
             </button>
         </div>
-        <div class="playerPlayback">
+        <div class="playerPlayback" >
             <span class="playerPlayback-progressTime">01:40</span>
             <div class="playerPlayback-slider">
                 <div class="slider">
@@ -58,6 +58,19 @@
         </div>
     </div>
 
+    <div class="playerVolume">
+        <button class="player-control" aria-label="Silenciar" aria-describedby="volumen-icon">
+            <i id="volumen-icon" class="icon-volumeUp" role="presentation" aria-label="Volumen alto"></i>
+        </button>
+        <div class="playerVolume-slider">
+            <div class="slider">
+                <div class="slider-progress">
+                    <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <aside class="sidebar">
         <header class="logo" >
             <a href="/" aria-current="page">
@@ -162,9 +175,5 @@
             </ul>
         </nav>
     </aside>
-
-
-
-    
 </body>
 </html>
