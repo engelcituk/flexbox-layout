@@ -1,0 +1,27 @@
+.nowPlaying{
+    display: flex;
+    gap: .5rem;
+}
+.nowPlaying img {
+    inline-size: 3.5rem;
+    block-size: 3.5rem;
+    vertical-align: middle;
+}
+.nowPlaying-details{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nowPlaying-title{
+    font: var(--baseFontBold);
+    color: var(--white);
+    text-decoration: none;
+    display: block; /*Hace que ocupe todo el bloque*/
+}
+
+.nowPlaying-artist{
+    font: var(--smallFontBold);
+    color: var(--gray10);
+    text-decoration: none;
+}
