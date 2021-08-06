@@ -1,12 +1,32 @@
-.player{
+@import './slider.css';
+@import './player-controls.css';
+@import './player-playback.css';
+@import './player-volume.css';
+@import './now-playing.css';
 
+.player{
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    /* margin-block-start: 5rem; */
+    /* border-top: 1px solid red; */
+    box-shadow: inset 0px 1px 0 var(--gray30);
 }
 
+/* cualquier hijo que tenga la clase hijo */
+.player > * {
+    flex: 1;
+}
 .player-control{
     border: none;
     cursor: pointer;
     padding: .5rem;
     background: none;
     color: var(--gray10);
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.player-playerVolume {    
+    display: flex;
+    justify-content: flex-end;
 }
