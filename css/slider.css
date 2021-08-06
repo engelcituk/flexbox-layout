@@ -1,0 +1,36 @@
+.slider{
+    inline-size: 200px;
+    background: rgba(255, 255, 255, .2);
+    block-size: .25rem;
+    border-radius: .5rem;
+}
+
+.slider:hover .slider-progress{
+    background: var(--primary); /*se cambia a verde con el hover*/
+}
+
+.slider:hover .slider-button{
+    display: block;/*se muestra con el hover*/
+}
+
+.slider-progress{
+    block-size: inherit; /*Hereda su valor de su padre, la clase slider*/
+    border-radius: inherit;
+    background: var(--white);
+    inline-size: 20%;
+    position: relative; /*Por ser elemento padre*/
+}
+
+.slider-button{
+    display: none;
+    background: var(--white);
+    block-size: 200%;
+    border-radius: 50%;
+    padding: 0;
+    border: 0;
+    aspect-ratio: 1/1; /*o con la misma medida de 200% con inline size*/
+    position: absolute;  /*Para que siempre se mueva al padre slider-progress,, este siendo hijo igual se mueva*/
+    left: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
