@@ -1,0 +1,20 @@
+.playerPlayback{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+}
+.playerPlayback-slider{
+    flex: 1;
+}
+.playerPlayback-progressTime{
+    font:var(--smallFont);
+    line-height: 1;
+    position: relative;
+    top:1px;
+}
+
+/*
+Tambien se puede aplicar las 3 propiedades flex-grow 1, flex-shrink 1, flex-basis 0%; en una sola propiedad llamada flex, su equivalente queda así
+flex-grow: 1 + flex-shrink: 1 + flex-basis: 0% = flex: 1;
+*/
