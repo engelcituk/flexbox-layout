@@ -5,6 +5,8 @@
     border-radius: .5rem;
     overflow: hidden;
     background: rgba(255, 255, 255, .1);
+     /* flex-shrink: 0;Este elemento nunca se haga más pequeño tomando en cuenta a inline-size 17.5 rem como base */
+    /* flex: 1; */
 }
 
 .playlistB:hover, .playlistB:focus-within{
@@ -22,8 +24,11 @@
 /* Al tener la img en el playlistB-cover este genera como un margen inferior, para quitar esto se logra con vertical-align: middle*/
 .playlistB-cover img {
     vertical-align: middle;
-    inline-size: 100%;
-    block-size: 100%;
+    inline-size: 4.75rem;
+    block-size: 4.75rem;
+
+    /* inline-size: 100%;
+    block-size: 100%; */
 
 }
 
