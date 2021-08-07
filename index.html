@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spotifu</title>
+    <title>Spoti Clon</title>
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Esta es un clon similar a spotify" />
     <meta property="og:url" content="https://engelcituk.github.io/flexbox-layout/" />
@@ -31,6 +31,9 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body class="body">
+
+    
+
     <form class="search" action="#" role="search" aria-label="Buscar por Artistas, canciones o podcast">
         <i class="icon-search" aria-hidden="true"></i>
         <!-- <label for="search">Buscar por Artistas, canciones o podcast</label> -->
@@ -40,6 +43,16 @@
     <section class="playlistList" aria-labelledby="region1">
         <div class="playlistList-top">
             <h2 class="playlistList-title" id="region1">Buenas noches</h2>
+
+            <div class="navigation">
+                <button class="navigation-prev" aria-label="Vovler" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                </button>
+                <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
+                    <i class="icon-arrowRight"></i>
+                </button>
+            </div>
+
         </div>
         <div class="playlistList-container">
             <div class="playlistB">
@@ -165,6 +178,14 @@
     <section class="playlistList" aria-labelledby="region2">
         <div class="playlistList-top">
             <h2 class="playlistList-title" id="region2">Escuchado recientemente</h2>
+            <div class="navigation">
+                <button class="navigation-prev" aria-label="Vovler" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                </button>
+                <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
+                    <i class="icon-arrowRight"></i>
+                </button>
+            </div>
         </div>
         <div class="playlistList-container">
             <div class="playlistA">
