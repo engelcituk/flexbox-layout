@@ -1,0 +1,34 @@
+.search{
+    position: relative;
+}
+
+.search i{
+    position: absolute;
+    font-size: 1rem;
+    left: .5rem; /*Desde su izquierda a su derecha*/
+    top: calc(50% - .5rem); /*Tomo el alto y le resto .5 rem, la operación sería como block-size: 1rem - .5rem */
+    block-size: 1rem; /*su altura*/
+    color: var(--gray10);
+
+}
+
+/*Los elementos input por defecto traen un ancho, que no se ven definidos en ningun lados, estos son los llamados tamaños intrinsecos, características que 
+los navegadores imponen, por lo que al poner max-inline-size: 22rem; no se cambia su medida, sino hasta indicar el width: 100%;
+Esto se hace para elementos inline, para elementos de tipo bloque no es necesario*/
+.search input{
+    border-radius: 1.25rem;
+    max-inline-size: 22rem;/*Indico que su width sea de 22rem como máximo*/
+    width: 100%;
+    padding: .5rem;
+    padding-inline-start: 2rem;
+    font: var(--baseFont);
+    color: var(--gray30); 
+}
+
+.search:focus-within i {
+    color: var(--gray30);
+}
+
+.search input::-webkit-input-placeholder {
+    color: var(--gray10);
+}
