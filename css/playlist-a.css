@@ -3,12 +3,12 @@
     inline-size: 13em; /*es el width*/
     padding: 1rem;
     border-radius: .25rem;
-    background: var(--gray40);
+    background: var(--gray30);
     box-sizing: border-box;
     transition: .3s background;    
 }
 .playlistA:hover{
-    background: var(--gray30);
+    background: var(--gray60);
 }
 .playlistA:hover .playlistA:focus-within {
     cursor: pointer;
@@ -23,6 +23,9 @@
 
 .playlistA-cover img{
     vertical-align: middle;
+    inline-size: 100%;
+    block-size: 100%;
+
 }
 
 .playlistA-cover {
