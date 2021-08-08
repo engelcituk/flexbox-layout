@@ -1,0 +1,37 @@
+:root {
+    --sidebarInliseSize: 15rem;
+    --minBlockSize: 37.5rem;/*Minimo de ancho*/
+    --minInlineSize: 48rem/*Minimo de ancho*/
+    --buttomSizePlayer: 5.5rem; /*Tamaño para el player*/
+}
+
+.layout {
+    /* box-shadow: inset 0 0 0 10px red; */
+    /*El tamaño minimo para hacer resize es de */
+    min-inline-size: var(--minInlineSize);
+    
+}
+
+.layout-block  {
+    display: flex;
+}
+
+.layout-sidebar{
+    /*un alto, el 100% del view port, vh es una unidad relativa al tamaño del viewport, el alto del navegador visible*/
+    block-size: calc(100vh - var(--buttomSizePlayer));/*100% del view port menos el tamaño del reproductor*/
+    inline-size: var(--sidebarInliseSize);
+    min-block-size: var(--minBlockSize);
+    overflow: auto;
+    flex-shrink: 0; 
+}
+
+.layout-main{
+    block-size: calc(100vh - var(--buttomSizePlayer));/*un alto, el 100% del view port, vh es una unidad relativa al tamaño del viewport, el alto del navegador visible*/
+    overflow: auto;
+    min-block-size: var(--minBlockSize);
+
+}
+.layout-bottom{
+    flex: 1;
+    block-size: var((var(--buttomSizePlayer)))
+}
