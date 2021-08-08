@@ -23,6 +23,7 @@
     min-block-size: var(--minBlockSize);
     overflow: auto;
     flex-shrink: 0; 
+    background: var(--gray60);
 }
 
 .layout-main{
