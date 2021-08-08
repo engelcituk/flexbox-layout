@@ -31,275 +31,511 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body class="body">
-    <div class="sticky">
-        <header class="header   " aria-label="Barra superior y menú del usuario">
-            <div class="navigation">
-                <button class="navigation-prev" aria-label="Vovler" title="Volver">
-                    <i class="icon-arrowLeft" aria-hidden="true"></i>
-                </button>
-                <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
-                    <i class="icon-arrowRight"></i>
-                </button>
+    <div class="page">
+        <div class="sticky">
+            <div class="page-block">
+                <header class="header" aria-label="Barra superior y menú del usuario">
+                    <div class="navigation">
+                        <button class="navigation-prev" aria-label="Vovler" title="Volver">
+                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                        </button>
+                        <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
+                            <i class="icon-arrowRight"></i>
+                        </button>
+                    </div>
+                    <form class="search" action="#" role="search" aria-label="Buscar por Artistas, canciones o podcast">
+                        <i class="icon-search" aria-hidden="true"></i>
+                        <!-- <label for="search">Buscar por Artistas, canciones o podcast</label> -->
+                        <input id="search" type="search" placeholder="Buscar por Artistas, canciones o podcast">
+                    </form>
+                </header>
             </div>
-            <form class="search" action="#" role="search" aria-label="Buscar por Artistas, canciones o podcast">
-                <i class="icon-search" aria-hidden="true"></i>
-                <!-- <label for="search">Buscar por Artistas, canciones o podcast</label> -->
-                <input id="search" type="search" placeholder="Buscar por Artistas, canciones o podcast">
-            </form>
-        </header>
+        </div>
+        <main class="page-block">
+            <section class="playlistList" aria-labelledby="region1">
+                <div class="playlistList-top">
+                    <h2 class="playlistList-title" id="region1">Buenas noches</h2>
+                    <div class="navigation">
+                        <button class="navigation-prev" aria-label="Vovler" title="Volver">
+                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                        </button>
+                        <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
+                            <i class="icon-arrowRight"></i>
+                        </button>
+                    </div>
+        
+                </div>
+                <div class="playlistList-container">
+                    <div class="playlistB">
+                        <div class="playlistB-cover">
+                            <img src="./img/covers/me-gusta.PNG" alt="Cover de Canciones que te gustan "  width="76" height="76">        
+                        </div>
+                        <div class="playlistB-details">
+                            <h3 class="playlistB-title">Canciones que te gustan </h3>
+                            <div class="playlistB-control">
+                                <button class="buttonIcon is-primary" title="Reproducir la lista de reproducciónCanciones que te gustan" aria-label="Reproducir la lista de reproducciónCanciones que te gustan">
+                                <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlistB">
+                        <div class="playlistB-cover">
+                            <img src="./img/covers/armin.PNG" alt="Cover de Armin Van Buuren Presents"  width="76" height="76">        
+                        </div>
+                        <div class="playlistB-details">
+                            <h3 class="playlistB-title">Armin Van Buuren Presents </h3>
+                            <div class="playlistB-control">
+                                <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción Armin Van Buuren Presents" aria-label="Reproducir la lista de reproducción Armin Van Buuren Presents">
+                                <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlistB">
+                        <div class="playlistB-cover">
+                            <img src="./img/covers/descubrimiento.PNG" alt="Cover de Descubrimiento semanal"  width="76" height="76">        
+                        </div>
+                        <div class="playlistB-details">
+                            <h3 class="playlistB-title">Descubrimiento semanal </h3>
+                            <div class="playlistB-control">
+                                <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción Descubrimiento semanal" aria-label="Reproducir la lista de reproducción Descubrimiento semanal">
+                                <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlistB">
+                        <div class="playlistB-cover">
+                            <img src="./img/covers/Assot.PNG" alt="Cover de ASOT1026"  width="76" height="76">        
+                        </div>
+                        <div class="playlistB-details">
+                            <h3 class="playlistB-title">ASOT1026 - A State of the </h3>
+                            <div class="playlistB-control">
+                                <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción ASOT1026 - A State of the" aria-label="Reproducir la lista de reproducción ASOT1026 - A State of the">
+                                <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlistB">
+                        <div class="playlistB-cover">
+                            <img src="./img/covers/Rammsteing.PNG" alt="Cover de This is Rammstein"  width="76" height="76">        
+                        </div>
+                        <div class="playlistB-details">
+                            <h3 class="playlistB-title">This is Rammstein</h3>
+                            <div class="playlistB-control">
+                                <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción This is Rammstein" aria-label="Reproducir la lista de reproducción This is Rammstein">
+                                <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlistB">
+                        <div class="playlistB-cover">
+                            <img src="./img/covers/electronica-maxima.PNG" alt="Cover de Electrónica máxima"  width="76" height="76">        
+                        </div>
+                        <div class="playlistB-details">
+                            <h3 class="playlistB-title">Electrónica máxima </h3>
+                            <div class="playlistB-control">
+                                <button class="buttonIcon is-primary" title="Reproducir la lista de electrónica máxima" aria-label="Reproducir la lista de reproducción Electrónica máximab">
+                                <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlistB">
+                        <div class="playlistB-cover">
+                            <img src="./img/covers/chilled-dances.PNG" alt="Cover de Chilled Danced Hits"  width="76" height="76">        
+                        </div>
+                        <div class="playlistB-details">
+                            <h3 class="playlistB-title">Chilled Danced Hits </h3>
+                            <div class="playlistB-control">
+                                <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción Chilled Danced Hits" aria-label="Reproducir la lista de reproducción Chilled Danced Hits">
+                                <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlistB">
+                        <div class="playlistB-cover">
+                            <img src="./img/covers/radar-novedades.PNG" alt="Cover de la playlist anime"  width="76" height="76">        
+                        </div>
+                        <div class="playlistB-details">
+                            <h3 class="playlistB-title">Radar de novedades</h3>
+                            <div class="playlistB-control">
+                                <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción Radar de novedades" aria-label="Reproducir la lista de reproducción Radar de novedades">
+                                <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlistB">
+                        <div class="playlistB-cover">
+                            <img src="./img/covers/daily-mix.PNG" alt="Cover de la playlist Daily mix 6"  width="76" height="76">        
+                        </div>
+                        <div class="playlistB-details">
+                            <h3 class="playlistB-title">Daily mix 6 </h3>
+                            <div class="playlistB-control">
+                                <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción Daily mix 6" aria-label="Reproducir la lista de reproducción Daily mix 6">
+                                <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="playlistList" aria-labelledby="region2">
+                <div class="playlistList-top">
+                    <h2 class="playlistList-title" id="region2">Recomendados</h2>
+                    <div class="navigation">
+                        <button class="navigation-prev" aria-label="Vovler" title="Volver">
+                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                        </button>
+                        <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
+                            <i class="icon-arrowRight"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="playlistList-container">
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/dance-classics.PNG" alt="Cover de la playlist Dance classics" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Dance classics</h3>
+                        <h4 class="playlistA-description">Dance radio hits from the 90s and 00s!</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/remix-hits.PNG" alt="Cover de la playlist Remix Hits" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Remix hits</h3>
+                        <h4 class="playlistA-description">Remixed hits from the last 15 years.</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/duo-mix.png" alt="Cover de la playlist Duo mix" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Duo mix</h3>
+                        <h4 class="playlistA-description">Te presentamos Duo Mix: escucha con la otra persona de tu Plan Duo</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/dance-hits-2017.PNG" alt="Cover de la playlist Dance Hits of 2017" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Dance Hits of 2017</h3>
+                        <h4 class="playlistA-description">Floor filters and big streamers of 2017</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/hola-beats.png" alt="Cover de la playlist Hola Beats" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Hola beats</h3>
+                        <h4 class="playlistA-description">Musica lofi para programar</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/mdm-hits.png" alt="Cover de la playlist MDM hits 2021" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">MDM hits 2021</h3>
+                        <h4 class="playlistA-description">Las canciones electrónicas más sonadas del año. </h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/energy-boster-dance.png" alt="Cover de la playlist Energy Booster Dance" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Energy Booster Dance</h3>
+                        <h4 class="playlistA-description">Need to get your energy level up? This will help!</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/euphoria-edm.png" alt="Cover de la playlist Euphoria Edm." width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Euphoria Edm</h3>
+                        <h4 class="playlistA-description">Únete a la extravaganza del neón y la electrónica. </h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/radar-novedades.PNG" alt="Cover de la playlist Radar de novedades" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Radar de novedades</h3>
+                        <h4 class="playlistA-description">Las novedades de los artistas que sigues y nuevos temas.</h4>
+                    </div>
+                    
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/tiesto.png" alt="Cover de la playlist This is tiesto" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">This is tiesto</h3>
+                        <h4 class="playlistA-description">Tiesto's best songs, remixes and compilations.</h4>
+                    </div>            
+                </div>
+            </section>
+            <section class="playlistList" aria-labelledby="region3">
+                <div class="playlistList-top">
+                    <h2 class="playlistList-title" id="region3">Podcasts</h2>
+                    <div class="navigation">
+                        <button class="navigation-prev" aria-label="Vovler" title="Volver">
+                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                        </button>
+                        <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
+                            <i class="icon-arrowRight"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="playlistList-container">
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/dance-classics.PNG" alt="Cover de la playlist Dance classics" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Dance classics</h3>
+                        <h4 class="playlistA-description">Dance radio hits from the 90s and 00s!</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/remix-hits.PNG" alt="Cover de la playlist Remix Hits" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Remix hits</h3>
+                        <h4 class="playlistA-description">Remixed hits from the last 15 years.</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/duo-mix.png" alt="Cover de la playlist Duo mix" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Duo mix</h3>
+                        <h4 class="playlistA-description">Te presentamos Duo Mix: escucha con la otra persona de tu Plan Duo</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/dance-hits-2017.PNG" alt="Cover de la playlist Dance Hits of 2017" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Dance Hits of 2017</h3>
+                        <h4 class="playlistA-description">Floor filters and big streamers of 2017</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/hola-beats.png" alt="Cover de la playlist Hola Beats" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Hola beats</h3>
+                        <h4 class="playlistA-description">Musica lofi para programar</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/mdm-hits.png" alt="Cover de la playlist MDM hits 2021" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">MDM hits 2021</h3>
+                        <h4 class="playlistA-description">Las canciones electrónicas más sonadas del año. </h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/energy-boster-dance.png" alt="Cover de la playlist Energy Booster Dance" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Energy Booster Dance</h3>
+                        <h4 class="playlistA-description">Need to get your energy level up? This will help!</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/euphoria-edm.png" alt="Cover de la playlist Euphoria Edm." width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Euphoria Edm</h3>
+                        <h4 class="playlistA-description">Únete a la extravaganza del neón y la electrónica. </h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/radar-novedades.PNG" alt="Cover de la playlist Radar de novedades" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Radar de novedades</h3>
+                        <h4 class="playlistA-description">Las novedades de los artistas que sigues y nuevos temas.</h4>
+                    </div>
+                    
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/tiesto.png" alt="Cover de la playlist This is tiesto" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">This is tiesto</h3>
+                        <h4 class="playlistA-description">Tiesto's best songs, remixes and compilations.</h4>
+                    </div>            
+                </div>
+            </section>
+            <section class="playlistList" aria-labelledby="region4">
+                <div class="playlistList-top">
+                    <h2 class="playlistList-title" id="region4">Para hacer ejercicio</h2>
+                    <div class="navigation">
+                        <button class="navigation-prev" aria-label="Vovler" title="Volver">
+                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                        </button>
+                        <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
+                            <i class="icon-arrowRight"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="playlistList-container">
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/dance-classics.PNG" alt="Cover de la playlist Dance classics" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Dance classics</h3>
+                        <h4 class="playlistA-description">Dance radio hits from the 90s and 00s!</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/remix-hits.PNG" alt="Cover de la playlist Remix Hits" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Remix hits</h3>
+                        <h4 class="playlistA-description">Remixed hits from the last 15 years.</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/duo-mix.png" alt="Cover de la playlist Duo mix" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Duo mix</h3>
+                        <h4 class="playlistA-description">Te presentamos Duo Mix: escucha con la otra persona de tu Plan Duo</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/dance-hits-2017.PNG" alt="Cover de la playlist Dance Hits of 2017" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Dance Hits of 2017</h3>
+                        <h4 class="playlistA-description">Floor filters and big streamers of 2017</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/hola-beats.png" alt="Cover de la playlist Hola Beats" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Hola beats</h3>
+                        <h4 class="playlistA-description">Musica lofi para programar</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/mdm-hits.png" alt="Cover de la playlist MDM hits 2021" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">MDM hits 2021</h3>
+                        <h4 class="playlistA-description">Las canciones electrónicas más sonadas del año. </h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/energy-boster-dance.png" alt="Cover de la playlist Energy Booster Dance" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Energy Booster Dance</h3>
+                        <h4 class="playlistA-description">Need to get your energy level up? This will help!</h4>
+                    </div>
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/euphoria-edm.png" alt="Cover de la playlist Euphoria Edm." width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Euphoria Edm</h3>
+                        <h4 class="playlistA-description">Únete a la extravaganza del neón y la electrónica. </h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/radar-novedades.PNG" alt="Cover de la playlist Radar de novedades" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">Radar de novedades</h3>
+                        <h4 class="playlistA-description">Las novedades de los artistas que sigues y nuevos temas.</h4>
+                    </div>
+                    
+                    <div class="playlistA">
+                        <div class="playlistA-cover">
+                            <img src="./img/covers/tiesto.png" alt="Cover de la playlist This is tiesto" width="150" height="150">
+                            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                <i class="icon-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h3 class="playlistA-title">This is tiesto</h3>
+                        <h4 class="playlistA-description">Tiesto's best songs, remixes and compilations.</h4>
+                    </div>            
+                </div>
+            </section>
+        </main>
     </div>
-    <section class="playlistList" aria-labelledby="region1">
-        <div class="playlistList-top">
-            <h2 class="playlistList-title" id="region1">Buenas noches</h2>
-            <div class="navigation">
-                <button class="navigation-prev" aria-label="Vovler" title="Volver">
-                    <i class="icon-arrowLeft" aria-hidden="true"></i>
-                </button>
-                <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
-                    <i class="icon-arrowRight"></i>
-                </button>
-            </div>
 
-        </div>
-        <div class="playlistList-container">
-            <div class="playlistB">
-                <div class="playlistB-cover">
-                    <img src="./img/covers/me-gusta.PNG" alt="Cover de Canciones que te gustan "  width="76" height="76">        
-                </div>
-                <div class="playlistB-details">
-                    <h3 class="playlistB-title">Canciones que te gustan </h3>
-                    <div class="playlistB-control">
-                        <button class="buttonIcon is-primary" title="Reproducir la lista de reproducciónCanciones que te gustan" aria-label="Reproducir la lista de reproducciónCanciones que te gustan">
-                        <i class="icon-play" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="playlistB">
-                <div class="playlistB-cover">
-                    <img src="./img/covers/armin.PNG" alt="Cover de Armin Van Buuren Presents"  width="76" height="76">        
-                </div>
-                <div class="playlistB-details">
-                    <h3 class="playlistB-title">Armin Van Buuren Presents </h3>
-                    <div class="playlistB-control">
-                        <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción Armin Van Buuren Presents" aria-label="Reproducir la lista de reproducción Armin Van Buuren Presents">
-                        <i class="icon-play" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="playlistB">
-                <div class="playlistB-cover">
-                    <img src="./img/covers/descubrimiento.PNG" alt="Cover de Descubrimiento semanal"  width="76" height="76">        
-                </div>
-                <div class="playlistB-details">
-                    <h3 class="playlistB-title">Descubrimiento semanal </h3>
-                    <div class="playlistB-control">
-                        <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción Descubrimiento semanal" aria-label="Reproducir la lista de reproducción Descubrimiento semanal">
-                        <i class="icon-play" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="playlistB">
-                <div class="playlistB-cover">
-                    <img src="./img/covers/Assot.PNG" alt="Cover de ASOT1026"  width="76" height="76">        
-                </div>
-                <div class="playlistB-details">
-                    <h3 class="playlistB-title">ASOT1026 - A State of the </h3>
-                    <div class="playlistB-control">
-                        <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción ASOT1026 - A State of the" aria-label="Reproducir la lista de reproducción ASOT1026 - A State of the">
-                        <i class="icon-play" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="playlistB">
-                <div class="playlistB-cover">
-                    <img src="./img/covers/Rammsteing.PNG" alt="Cover de This is Rammstein"  width="76" height="76">        
-                </div>
-                <div class="playlistB-details">
-                    <h3 class="playlistB-title">This is Rammstein</h3>
-                    <div class="playlistB-control">
-                        <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción This is Rammstein" aria-label="Reproducir la lista de reproducción This is Rammstein">
-                        <i class="icon-play" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="playlistB">
-                <div class="playlistB-cover">
-                    <img src="./img/covers/electronica-maxima.PNG" alt="Cover de Electrónica máxima"  width="76" height="76">        
-                </div>
-                <div class="playlistB-details">
-                    <h3 class="playlistB-title">Electrónica máxima </h3>
-                    <div class="playlistB-control">
-                        <button class="buttonIcon is-primary" title="Reproducir la lista de electrónica máxima" aria-label="Reproducir la lista de reproducción Electrónica máximab">
-                        <i class="icon-play" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="playlistB">
-                <div class="playlistB-cover">
-                    <img src="./img/covers/chilled-dances.PNG" alt="Cover de Chilled Danced Hits"  width="76" height="76">        
-                </div>
-                <div class="playlistB-details">
-                    <h3 class="playlistB-title">Chilled Danced Hits </h3>
-                    <div class="playlistB-control">
-                        <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción Chilled Danced Hits" aria-label="Reproducir la lista de reproducción Chilled Danced Hits">
-                        <i class="icon-play" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="playlistB">
-                <div class="playlistB-cover">
-                    <img src="./img/covers/radar-novedades.PNG" alt="Cover de la playlist anime"  width="76" height="76">        
-                </div>
-                <div class="playlistB-details">
-                    <h3 class="playlistB-title">Radar de novedades</h3>
-                    <div class="playlistB-control">
-                        <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción Radar de novedades" aria-label="Reproducir la lista de reproducción Radar de novedades">
-                        <i class="icon-play" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="playlistB">
-                <div class="playlistB-cover">
-                    <img src="./img/covers/daily-mix.PNG" alt="Cover de la playlist Daily mix 6"  width="76" height="76">        
-                </div>
-                <div class="playlistB-details">
-                    <h3 class="playlistB-title">Daily mix 6 </h3>
-                    <div class="playlistB-control">
-                        <button class="buttonIcon is-primary" title="Reproducir la lista de reproducción Daily mix 6" aria-label="Reproducir la lista de reproducción Daily mix 6">
-                        <i class="icon-play" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="playlistList" aria-labelledby="region2">
-        <div class="playlistList-top">
-            <h2 class="playlistList-title" id="region2">Escuchado recientemente</h2>
-            <div class="navigation">
-                <button class="navigation-prev" aria-label="Vovler" title="Volver">
-                    <i class="icon-arrowLeft" aria-hidden="true"></i>
-                </button>
-                <button class="navigation-next" aria-label="Avanzar" title="Avanzar" disabled>
-                    <i class="icon-arrowRight"></i>
-                </button>
-            </div>
-        </div>
-        <div class="playlistList-container">
-            <div class="playlistA">
-                <div class="playlistA-cover">
-                    <img src="./img/covers/dance-classics.PNG" alt="Cover de la playlist Dance classics" width="150" height="150">
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                        <i class="icon-play" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <h3 class="playlistA-title">Dance classics</h3>
-                <h4 class="playlistA-description">Dance radio hits from the 90s and 00s!</h4>
-            </div>
-            <div class="playlistA">
-                <div class="playlistA-cover">
-                    <img src="./img/covers/remix-hits.PNG" alt="Cover de la playlist Remix Hits" width="150" height="150">
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                        <i class="icon-play" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <h3 class="playlistA-title">Remix hits</h3>
-                <h4 class="playlistA-description">Remixed hits from the last 15 years.</h4>
-            </div>
-            <div class="playlistA">
-                <div class="playlistA-cover">
-                    <img src="./img/covers/duo-mix.png" alt="Cover de la playlist Duo mix" width="150" height="150">
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                        <i class="icon-play" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <h3 class="playlistA-title">Duo mix</h3>
-                <h4 class="playlistA-description">Te presentamos Duo Mix: escucha con la otra persona de tu Plan Duo</h4>
-            </div>
-            <div class="playlistA">
-                <div class="playlistA-cover">
-                    <img src="./img/covers/dance-hits-2017.PNG" alt="Cover de la playlist Dance Hits of 2017" width="150" height="150">
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                        <i class="icon-play" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <h3 class="playlistA-title">Dance Hits of 2017</h3>
-                <h4 class="playlistA-description">Floor filters and big streamers of 2017</h4>
-            </div>
-            <div class="playlistA">
-                <div class="playlistA-cover">
-                    <img src="./img/covers/hola-beats.png" alt="Cover de la playlist Hola Beats" width="150" height="150">
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                        <i class="icon-play" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <h3 class="playlistA-title">Hola beats</h3>
-                <h4 class="playlistA-description">Musica lofi para programar</h4>
-            </div>
-            <div class="playlistA">
-                <div class="playlistA-cover">
-                    <img src="./img/covers/mdm-hits.png" alt="Cover de la playlist MDM hits 2021" width="150" height="150">
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                        <i class="icon-play" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <h3 class="playlistA-title">MDM hits 2021</h3>
-                <h4 class="playlistA-description">Las canciones electrónicas más sonadas del año. </h4>
-            </div> 
-            <div class="playlistA">
-                <div class="playlistA-cover">
-                    <img src="./img/covers/energy-boster-dance.png" alt="Cover de la playlist Energy Booster Dance" width="150" height="150">
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                        <i class="icon-play" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <h3 class="playlistA-title">Energy Booster Dance</h3>
-                <h4 class="playlistA-description">Need to get your energy level up? This will help!</h4>
-            </div>
-            <div class="playlistA">
-                <div class="playlistA-cover">
-                    <img src="./img/covers/euphoria-edm.png" alt="Cover de la playlist Euphoria Edm." width="150" height="150">
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                        <i class="icon-play" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <h3 class="playlistA-title">Euphoria Edm</h3>
-                <h4 class="playlistA-description">Únete a la extravaganza del neón y la electrónica. </h4>
-            </div> 
-            <div class="playlistA">
-                <div class="playlistA-cover">
-                    <img src="./img/covers/radar-novedades.PNG" alt="Cover de la playlist Radar de novedades" width="150" height="150">
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                        <i class="icon-play" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <h3 class="playlistA-title">Radar de novedades</h3>
-                <h4 class="playlistA-description">Las novedades de los artistas que sigues y nuevos temas.</h4>
-            </div>
-            
-            <div class="playlistA">
-                <div class="playlistA-cover">
-                    <img src="./img/covers/tiesto.png" alt="Cover de la playlist This is tiesto" width="150" height="150">
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                        <i class="icon-play" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <h3 class="playlistA-title">This is tiesto</h3>
-                <h4 class="playlistA-description">Tiesto's best songs, remixes and compilations.</h4>
-            </div>            
-        </div>
-    </section>
-
-    
     <div class="sidebar">
         <header class="logo" aria-label="Logotipo de la aplicación">
             <a href="/" aria-current="page">
