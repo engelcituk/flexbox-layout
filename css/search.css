@@ -1,5 +1,7 @@
 .search{
     position: relative;
+    flex-shrink: 0; /*a poner esto en un flex container el input se achica, por lo que se le pone un flex-shrink:0, pero esto no se compone*/
+    flex-grow: 1;/*AL poner flex-grow el achicamiento se arregla*/
 }
 
 .search i{
